@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Exercice 08 - Consommer une api avec Axios
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En vous inspirant de l'affichage présenté sur le site [https://randomuser.me/](https://randomuser.me/), créez une application React qui affichera certaines informations d'un utilisateur obtenu grâce à un appel à l'api du même site.
 
-## Available Scripts
+## Instructions
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Créez un nouveau projet avec **Create React App** que vous nommerez ex08_nom_prenom et faite le nécessaire le relier à un dépôt Github sur votre compte personnelle.
+- À l'affichage et au rafraichissement de la page, votre application doit faire un appel à l'api de **RandomUser** et afficher les informations obtenues dans un composant "carte".
+- Je vous laisse "découper" la carte en composant comme bon vous semble mais ça vous prends minimalement les composants suivants : 
+  - `Card` : Le composant "maitre" qui va englober les autres.
+  - `Avatar` : Il s'occupe d'afficher uniquement la photo.
+  - `Information` : La zone du bas où sont affiché les informations de l'usager
+- Le composant doit être autonome, c'est-à-dire que si je l'inclus 2 fois dans la page, deux appels différent à l'api seront fait.
+- Consulter la documentation du site [https://randomuser.me/api/](https://randomuser.me/api/) pour connaître l'url à utiliser et connaitre le format de la réponse.
+- Dans la section information, quand on clique sur un des icones, l'information affichée sous la photo doit être modifié en conséquence. Référez-vous à l'affichage fait sur [https://randomuser.me/](https://randomuser.me/).
+- Une fois l'exercice terminé, poussez votre projet sur GitHub et retournez le devoir Teams associé avec l'url de votre dépôt.
